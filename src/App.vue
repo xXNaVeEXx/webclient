@@ -1,47 +1,32 @@
 <template>
-  <v-app>
-    <AppToolBar />
-    <v-content>
-      <TestUsers v-bind:users="users" />
-      <FormValidation />
-    </v-content>
-  </v-app>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
+  </div>
 </template>
 
-<script>
-import TestUsers from "./components/TestUsers";
-import FormValidation from "./components/FormValidation";
-import AppToolBar from "./components/AppToolbar";
+<style lang="scss">
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-export default {
-  name: "App",
+#nav {
+  padding: 30px;
 
-  components: {
-    TestUsers,
-    FormValidation,
-    AppToolBar
-  },
+  a {
+    font-weight: bold;
+    color: #2c3e50;
 
-  data() {
-    return {
-      users: [
-        {
-          name: "Gamzat",
-          email: "test@gmail.de",
-          adresse: "diesestraße 45"
-        },
-        {
-          name: "Gamzat2",
-          email: "test@gmail.de",
-          adresse: "diesestraße 45"
-        },
-        {
-          name: "Gamzat3",
-          email: "test@gmail.de",
-          adresse: "diesestraße 45"
-        }
-      ]
-    };
+    &.router-link-exact-active {
+      color: #42b983;
+    }
   }
-};
-</script>
+}
+</style>
