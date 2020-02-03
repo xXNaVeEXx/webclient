@@ -1,20 +1,17 @@
 <template>
   <div class="home">
     <TestUsers v-bind:users="users" />
-    <FormValidation />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import TestUsers from "@/components/TestUsers.vue";
-import FormValidation from "@/components/FormValidation.vue";
 
 export default {
   name: "home",
   components: {
-    TestUsers,
-    FormValidation
+    TestUsers
   },
   data() {
     return {
