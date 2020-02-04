@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-    <TestUsers v-bind:users="users" />
+    <h1>Test</h1>
+    <TestUsers />
   </div>
 </template>
 
@@ -12,27 +13,6 @@ export default {
   name: "home",
   components: {
     TestUsers
-  },
-  data() {
-    return {
-      users: [
-        {
-          name: "Gamzat",
-          email: "test@gmail.de",
-          adresse: "diesestraße 45"
-        },
-        {
-          name: "Gamzat2",
-          email: "test@gmail.de",
-          adresse: "diesestraße 45"
-        },
-        {
-          name: "Gamzat3",
-          email: "test@gmail.de",
-          adresse: "diesestraße 45"
-        }
-      ]
-    };
   }
 };
 </script>
