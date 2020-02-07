@@ -1,7 +1,7 @@
 <template>
   <v-form v-model="valid">
-    <v-container>
-      <v-row>
+    <v-container fill-height fluid>
+      <v-row align-content="center" justify="center" align="center">
         <v-col cols="12" md="4">
           <v-text-field
             v-model="firstname"
@@ -12,9 +12,11 @@
           ></v-text-field>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row align-content="center" justify="center" align="center">
         <v-col cols="12" md="4">
           <v-text-field
+            align="center"
+            justify="center"
             v-model="email"
             :rules="emailRules"
             label="E-mail"
@@ -22,7 +24,7 @@
           ></v-text-field>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row align-content="center" justify="center" align="center">
         <v-col cols="12" md="4">
           <v-text-field
             v-model="adress"
