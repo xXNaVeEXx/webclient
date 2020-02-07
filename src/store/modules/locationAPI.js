@@ -1,12 +1,7 @@
 import axios from "axios";
 
 const state = {
-  data: {
-    geo: {
-      latitude: 0,
-      longitude: 0
-    }
-  }
+  data: {}
 };
 const getters = {
   getLocation: state => state.data

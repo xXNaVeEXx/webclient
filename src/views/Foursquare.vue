@@ -68,6 +68,9 @@
                   <v-btn color="orange" text>
                     Explore
                   </v-btn>
+                  <v-btn color="orange" text>
+                    Rout
+                  </v-btn>
                 </v-card-actions>
               </v-card>
             </v-col>
