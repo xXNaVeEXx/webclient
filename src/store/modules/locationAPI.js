@@ -17,7 +17,7 @@ const actions = {
       `https://tools.keycdn.com/geo.json?host=${ip}`
     );
 
-    commit("setLocation", response.data.data);
+    commit("setLocation", response.data);
   }
 };
 const mutations = {
