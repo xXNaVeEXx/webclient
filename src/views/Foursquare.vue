@@ -115,16 +115,8 @@ export default {
   created() {
     this.fetchData();
     this.fetchIP().then(() => {
-      window.console.log("in then");
-      window.console.log(this.getIP);
-      this.fetchLocation(this.getIP.response.ip).then(() => {
-        window.console.log(this.getLocation);
-      });
+      this.fetchLocation(this.getIP.response.ip);
     });
-  },
-  mounted() {
-    window.console.log("mounted");
-    window.console.log(this.getip);
   },
   data: () => ({
     valid: false,

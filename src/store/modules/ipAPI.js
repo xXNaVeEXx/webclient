@@ -15,8 +15,6 @@ const actions = {
       }
     };
     payload.response = response.data;
-    window.console.log("in fetchip");
-    window.console.log(payload);
     commit("setIP", payload);
   }
 };
