@@ -95,7 +95,7 @@ const actions = {
     const category = payload.category;
     const radius = payload.radius;
     const response = await axios.get(
-      `https://api.foursquare.com/v2/venues/explore?client_id=JCLYYTPQGCRUCY4Z1TJMTYS0H0NN0Q2ZYLX0J5B1STFLACIH&client_secret=HQYHGN25DEWQGSKNQLI514TSN52XVEIPT5UC0FFRO5KDF4JQ&v=20180323&limit=${radius}&ll=${latitude},${longitude}&query=${category}`
+      `https://api.foursquare.com/v2/venues/explore?client_id=JCLYYTPQGCRUCY4Z1TJMTYS0H0NN0Q2ZYLX0J5B1STFLACIH&client_secret=HQYHGN25DEWQGSKNQLI514TSN52XVEIPT5UC0FFRO5KDF4JQ&v=20180323&radius=${radius}&ll=${latitude},${longitude}&query=${category}`
     );
 
     commit("setData", response.data);
