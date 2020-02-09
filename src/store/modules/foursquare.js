@@ -26,6 +26,8 @@ const state = {
               contact: {},
               location: {
                 address: "",
+                lat: 0,
+                lng: 0,
                 distance: 0,
                 postalCode: 0,
                 cc: "",
